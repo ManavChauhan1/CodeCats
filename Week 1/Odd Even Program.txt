@@ -1,0 +1,11 @@
+#include<stdio.h>
+main()
+{
+  int num; //Variable Declaration
+  printf("Enter any number:");
+  scanf("%d",&num);
+  if (num%2==0)
+     printf("The number is even number.");
+  
+  else printf("The number is an odd number.");
+}
