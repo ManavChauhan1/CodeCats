@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+  int a,b; //Declaring two variables
+  printf("Enter Two Numbers:");
+  scanf("%d%d",&a,&b); //Input two variables
+  if (a>b)
+    printf("Greater Number is %d",a);
+  else
+    printf("Greater Nuumber is %d",b);
+  return 0;
+}
