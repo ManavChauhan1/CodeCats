@@ -1,0 +1,50 @@
+Using FOR Loop
+
+#include<stdio.h>
+int main()
+{
+  int num,i,fact=1;
+  printf("Enter any number:");
+  scanf("%d",&num);
+  for(i=1;i<=num;i++)
+  {
+    fact=fact*i;
+   }
+   printf("Fact is %d",fact);
+  return 0;
+}
+
+Using WHILE Loop
+
+#include<stdio.h>
+int main()
+{
+  int num,fact=1;
+  printf("Enter any number:");
+  scanf("%d",&num);
+  while(num>=1)
+  {
+    fact=fact*num;
+    num--;
+   }
+   printf("Fact is %d",fact);
+  return 0;
+}
+
+
+Using DO-WHILE Loop
+
+#include<stdio.h>
+int main()
+{
+  int num,fact=1;
+  printf("Enter any number:");
+  scanf("%d",&num);
+  do{
+    fact=fact*num;
+    num--;
+   }while(num>=1);
+   printf("Fact is %d",fact);
+  return 0;
+}
+
