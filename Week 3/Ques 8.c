@@ -19,11 +19,13 @@ void main()
           {
               printf("Number of Tails=%d",(n+1)/2);
               printf("\nNumber of Heads=%d",(n-1)/2);
+              printf("\nEnd Value is Tails.");
           }
           else if(f==84||f==116)
           {
               printf("Number of Tails=%d",(n-1)/2);
               printf("\nNumber of Heads=%d",(n+1)/2);
+              printf("\nEnd Value is Heads.");
           }
           else printf("Wrong Input.");
       }
