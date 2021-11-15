@@ -10,7 +10,9 @@ void main()
   {
       if(st>=0)
       {
-         if(i%4==0)
+        if(n%2==0)
+        {
+             if(i%4==0)
         {
           pos=st;
         }
@@ -24,6 +26,24 @@ void main()
       }
       else if(i%4==3)
         pos=st+i+1;
+        }
+        else
+        {
+             if(i%4==0)
+          {
+             pos=st;
+          }
+             else if(i%4==1)
+          {
+             pos=st+i;
+          }
+             else if(i%4==2)
+          {
+              pos=st-1;
+          }
+              else if(i%4==3)
+              pos=st-i-1;
+           }
       }
       else
       {
