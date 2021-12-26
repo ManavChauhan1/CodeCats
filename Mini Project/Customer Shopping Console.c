@@ -88,6 +88,7 @@ void signup()
     gets(det1.email);
      fwrite(&det1,sizeof(sdetails),1,fp);
      printf("\t\tSIGNED UP SUCCESSFULLY\n\t\tLOGIN USING YOUR USERNAME AND PASSWORD.");
+     signin();
 
     fclose(fp);
     main();
@@ -107,15 +108,13 @@ void signin()
     fflush(stdin);
     gets(password);
 
-    while(fread(&det1,sizeof(det1),1,fp))
+   while(fread(&det1,sizeof(det1),1,fp))
     {
         if(strcmp(username,det1.username)==0 && strcmp(password,det1.password)==0)
         {
             printf("\nLOGIN SUCCESSFUL.\n");
-            login_status+=1;
-            printf("********************************************YOUR DETAILS ARE********************************************");
+             printf("********************************************YOUR DETAILS ARE********************************************");
             printf("\nName:%s\nAddress:%s\nContact Number:%s\nEmail:%s\nUsername:%s\nPassword:%s",det1.name,det1.address,det1.mnum,det1.email,det1.username,det1.password);
-            display();
         }
         else
             printf("Please Enter Correct Username and Password.");
